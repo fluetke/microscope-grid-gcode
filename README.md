@@ -20,15 +20,16 @@ into a image of whatever you put on your buildplate.
 This works great when reverse engineering or debugging PCBs for example.
 
 ## How to use:
-Open the python script in your favorite text editor and edit the variables to suit your printer and camera setup.
-These are the main values to change:
-area_width_mm - width of your scanarea/buildplate in mm
-area_height_mm - height of your scanarea/buildplate in mm
-start_pos_x - first scan position and lower limit on the x-axis
-start_pos_y - first scan position and lower limit on the y-axis
-cell_width_mm - width of the visible area of your camera in mm
-cell_height_mm - height of the visible area of your camera in mm
-pcb_clearance_mm - the height of the pcb or object under the microscope in mm, 
+Open the python script in your favorite text editor and edit the variables to suit your printer and camera setup.\\
+These are the main values to change:\\
+
+* area_width_mm - width of your scanarea/buildplate in mm
+* area_height_mm - height of your scanarea/buildplate in mm
+* start_pos_x - first scan position and lower limit on the x-axis
+* start_pos_y - first scan position and lower limit on the y-axis
+* cell_width_mm - width of the visible area of your camera in mm
+* cell_height_mm - height of the visible area of your camera in mm
+* pcb_clearance_mm - the height of the pcb or object under the microscope in mm, \\
                    to avoid crashing into it the gcode will keep the printhead above this height.
 
 The script will create a new file imageGrid.gcode inside of your working directory.
