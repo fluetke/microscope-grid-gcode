@@ -35,7 +35,7 @@ if __name__ == '__main__':
             outputGCODE.write(image_macro)
             outputGCODE.write(wait_macro_post)
             posy += cell_height_mm
-            if posy > area_height+0.1:
+            if posy > area_height_mm+0.1:
                 break
             outputGCODE.write("G1 Y" + str(posy) + " F1000\n")
             outputGCODE.write(wait_macro_pre)
