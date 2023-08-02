@@ -12,7 +12,7 @@ if __name__ == '__main__':
     pcb_clearance_mm=8
     start_gcode="M73 P0 R107\nM107\n;TYPE:Custom\nG90 ; use absolute coordinates\nG28 ; home all\nM501;\nM420 S\n"
     image_macro="TIMELAPSE_TAKE_FRAME\n"
-    wait_macro_pre="M400\nG4 P5000\n"
+    wait_macro_pre="M400\nG4 P500\n"
     wait_macro_post="G4 P500\n"
     initial_position="G1 X" + str(start_pos_x) +" Y" + str(start_pos_y) + " Z" + str(pcb_clearance_mm) + " F1000 ; move print head up to give some clearance for pcb components\n"
 
